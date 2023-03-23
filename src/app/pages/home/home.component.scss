@@ -1,0 +1,513 @@
+.home{
+    min-height: 100vh;
+    width: 100vw;
+    overflow-y: hidden;
+    .home-container{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        user-select: none;
+
+        .first-section{
+            min-height: calc(100vh - 80px);
+            display: flex;
+            flex-direction: row;
+            margin: 100px 0px;
+
+            .left{
+                display: flex;
+                flex-direction: column;
+                flex: 1;
+                padding-top: 120px;
+
+                h1{
+                    margin-left: 150px;
+                    font-size: 40px;
+                }
+
+
+                p{
+                    color: #ebebf599;
+                    margin-left: 150px;
+                    font-size: 18px;
+                }
+
+                .download-now{
+                    margin-top: 15px;
+                    button{
+                        margin-left: 150px;
+                        padding: 8px 30px;
+                        border-radius: 25px;
+                        font-size: 14px;
+                        border: none;
+                        background-color: white;
+                        color: black;
+                        cursor: pointer;
+                    }
+
+                    p{
+                        font-size: 13px;
+                        padding-left: 38px
+                    }
+   
+                }
+
+            }
+
+            .right{
+                height: 100%;
+                position: relative;
+                display: flex;
+                flex: 1;
+                align-items: center;
+                justify-content: center;
+                padding-top: 30px;
+                .phone-cover{
+                    position: absolute;
+                    z-index: 100;
+                    height: 530px;
+                    object-fit: contain;
+                    top: 60%;
+                    pointer-events: none;
+                }
+                .mockup-video{
+                    position: absolute;
+                    height: 530px;
+                    width: 240px;
+                    z-index: 2;
+                    top: 100%;
+                    pointer-events: none;
+                }
+            }
+        }
+
+        .second-section{
+            height: 100vh;
+            display: flex;
+            flex-direction: row;
+            margin: 100px 0px;
+
+            .left{
+                height: 100%;
+                position: relative;
+                display: flex;
+                flex: 1;
+                align-items: center;
+                justify-content: center;
+                padding-top: 30px;
+                .phone-cover{
+                    position: absolute;
+                    z-index: 100;
+                    height: 600px;
+                    object-fit: contain;
+                }
+                .mockup-video{
+                    position: absolute;
+                    bottom: 20px;
+                    height: 600px;
+                    width: 270px;
+                    z-index: 2;
+                    pointer-events: none;
+                }
+            }
+
+            .right{
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+                flex: 1;
+
+                h1{
+                    font-size: 40px;
+                    width: 60%;
+                }
+
+
+                p{
+                    color: #ebebf599;
+                    font-size: 18px;
+                }
+            }
+        }
+
+        .third-section{
+            height: 100vh;
+            display: flex;
+            flex-direction: row;
+            margin: 100px 0px;
+
+              .left{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                flex: 1;
+
+                h1{
+                    margin-left: 150px;
+                    font-size: 40px;
+                }
+
+
+                p{
+                    color: #ebebf599;
+                    margin-left: 150px;
+                    font-size: 18px;
+                }
+
+            }
+
+            .right{
+                height: 100%;
+                position: relative;
+                display: flex;
+                flex: 1;
+                align-items: center;
+                justify-content: center;
+                padding-top: 30px;
+                .phone-cover{
+                    position: absolute;
+                    z-index: 100;
+                    height: 600px;
+                    object-fit: contain;
+                }
+                .mockup-video{
+                    position: absolute;
+                    bottom: 20px;
+                    height: 600px;
+                    width: 270px;
+                    z-index: 2;
+                    pointer-events: none;
+                }
+            }
+        }
+
+        .forth-section{
+            height: 80vh;
+            margin: 100px 0px;
+
+            .forth-section-container{
+                height: 100%;
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+
+                .title{
+                    h1{
+                        font-weight: 300;
+                        font-size: 42px;
+                    }
+                    margin-bottom: 50px;
+                }
+
+    
+                .blocks{
+                    width: 100%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    flex-direction: row;
+                    .block{
+                        width: 33.3%;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+    
+                        .icon{
+                            font-size: 80px;
+                        }
+    
+                        .text{
+                            font-size: 16px;
+                            font-weight: 300;
+                        }
+                    
+                    }
+                }
+            }
+           
+        }
+    }
+}
+
+
+
+@media only screen and (max-width: 920px) {
+  .home{
+    overflow-x: hidden;
+    .home-container{
+        .first-section{
+            flex-direction: column;
+            justify-content: center;
+            height: 180vh;
+
+            .left{
+                width: 95%;
+                height: 25vh;
+                justify-content: center;
+                align-items: center;
+                padding: 20px 25px;
+                flex-direction: column;
+
+                h1{
+                    margin-left: 0px;
+                    font-size: 60px;
+                }
+
+                p{
+                    margin-left: 0px;
+                    font-size: 25px;
+                }
+
+                .download-now{
+                    width: 200px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    flex-direction: column;
+                    margin-top: 50px;
+                    margin-right: 25px;;
+                    
+                    button{
+                        margin: 0 auto;
+                        padding: 12px 30px;
+                        font-size: 18px;
+                    }
+
+                    p{
+                        text-align: left;
+                        margin-right: 40px;
+                    }
+                }
+            }
+
+            .right{
+                .phone-cover{
+                    top: 10%;
+                    height: 900px;
+                }
+
+                .mockup-video{
+                    height: 900px;
+                    top: 12%;
+                    width: 400px;
+                }
+
+            }
+        }
+
+
+        .second-section{
+            flex-direction: column-reverse;
+            justify-content: center;
+            height: 180vh;
+            .left{
+                .phone-cover{
+                    top: 5%;
+                    height: 900px;
+                }
+
+                .mockup-video{
+                    height: 900px;
+                    top: 12%;
+                    width: 410px;
+                }
+            }
+
+            .right{
+                width: 100%;
+                height: 25vh;
+                justify-content: center;
+                align-items: center;
+                padding: 20px 5px;
+
+                h1{
+                    width: 90%;
+                    font-size: 60px;
+                    text-align: center;
+                }
+
+                p{
+                    margin-left: 0px;
+                    font-size: 25px;
+                }
+            }
+        }
+
+        .third-section{
+            flex-direction: column;
+            justify-content: center;
+            height: 180vh;
+
+            .left{
+                width: 100%;
+                height: 25vh;
+                justify-content: center;
+                align-items: center;
+
+                h1{
+                    margin-left: 0px;
+                    width: 90%;
+                    font-size: 60px;
+                    text-align: center;
+                }
+
+                p{
+                    margin-left: 0px;
+                    font-size: 25px;
+                    width: 90%;
+                }
+            }
+
+            .right{
+                .phone-cover{
+                    top: 10%;
+                    height: 900px;
+                }
+
+                .mockup-video{
+                    height: 900px;
+                    top: 12%;
+                    width: 410px;
+                }
+
+            }
+        }
+
+        .forth-section{
+            overflow: hidden;
+            .forth-section-container{
+                overflow-x: hidden;
+                .title{
+                    h1{
+                        font-size: 50px;
+                    }
+                }
+
+                .blocks{
+                    flex-direction: column;
+                    overflow: hidden;
+                    .block{
+                        width: 80%;
+
+                        .icon{
+                            font-size: 120px;
+                        }
+
+                        .text{
+                             font-size: 25px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+  }
+}
+
+@media only screen and (max-width: 460px) {
+    .home{
+        .home-container{
+            .first-section{
+                .left{
+                    h1{
+                        font-size: 40px;
+                    }
+
+                    p{
+                        font-size: 20px;
+                    }
+                }
+
+                .right{
+                    .phone-cover{
+                        height: 700px;
+                    }
+
+                    .mockup-video{
+                        height: 700px;
+                        width: 320px;
+                    }
+                }
+            }
+
+            .second-section{
+                .left{
+                    .phone-cover{
+                        height: 700px;
+                    }
+
+                    .mockup-video{
+                        height: 700px;
+                        width: 320px;
+                    }
+                }
+
+                .right{
+                    h1{
+                        font-size: 45px;
+                    }
+
+                    p{
+                        font-size: 20px;
+                    }
+                }
+                
+            }
+
+            .third-section{
+                padding-left: 15px;
+                .left{
+                    h1{
+                        font-size: 45px;
+                    }
+
+                    p{
+                        font-size: 20px;
+                        text-align: center;
+                    }
+                }
+
+                .right{
+                    .phone-cover{
+                        height: 700px;
+                    }
+
+                    .mockup-video{
+                        height: 700px;
+                        width: 320px;
+                    }
+                }
+            }
+
+            .forth-section{
+                height: 150vh;
+                .forth-section-container{
+                    margin-top: 50px;
+
+                    .title{
+                        h1{
+                            font-size: 35px;
+                        }
+                    }
+                    .blocks{
+                        .block{
+                            .icon{
+                                font-size: 90px;
+                            }
+
+                            .text{
+                                font-size: 18px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}

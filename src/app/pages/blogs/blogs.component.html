@@ -1,0 +1,30 @@
+<div class="blogs">
+    <div class="blogs-header">
+        <div class="content">
+            <h2>Run by Helt</h2>
+            <h1>The Helt Blog</h1>
+            <p>Learn how to stay healthy and productive.</p>
+        </div>
+    </div>
+    <div class="all-posts-header">
+        <h2>All posts</h2>
+    </div>
+
+    <ul class="pagination">
+    <li *ngFor="let blog of blogs | paginate: { itemsPerPage: 6, currentPage: page }">
+          <div class="blog-post" (click)="goToArticleLink(blog.uploaded_by, blog.slug)">
+            <div class="image-container">
+                <img src={{blog.header_image}} alt="posts header image" />
+
+            </div>
+            <div class="content">
+                <h1>{{blog.title}}</h1>
+                <button (click)="goToArticleLink(blog.uploaded_by, blog.slug)">Read More</button>
+            </div>
+        </div>
+    </li>
+</ul>
+<div class="has-text-centered">
+    <pagination-controls class="pagination-controls" (pageChange)="page = $event" previousLabel="" nextLabel=""></pagination-controls>
+</div>
+</div>

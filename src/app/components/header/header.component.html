@@ -1,0 +1,29 @@
+<div class="header">
+    <div class="header-container">
+        <div class="logo" (click)="goToLink()">
+            <img src="../../../assets/logo/logo.png" alt="helt logo" />
+        </div>
+        <div class="header-links">
+            <a routerLinkActive="active-link" (click)="goToLink()" routerLink="/" [routerLinkActiveOptions]="{ exact: true }" class="header-link">HOME</a>
+            <a routerLinkActive="active-link" (click)="goToLink('blog')" routerLink="/blog" class="header-link">BLOG</a>
+            <a routerLinkActive="active-link" (click)="goToLink('faq')" routerLink="/faq" class="header-link">FAQs</a>
+            <!-- <a href="https://helt-app.sleekplan.app/" style="text-decoration: none;"  target="_blank" class="header-link">Request Product/Service</a> -->
+            <a  target="_blank" style="text-decoration: none;" href="https://uquu7vh3rxo.typeform.com/to/cXPfgIIT" class="header-link button">Register</a>
+            <span class="for-vendors">(For Vendors)</span>
+        </div>
+        <div class="mobile">
+            <fa-icon [icon]="hamburger" class="icon" (click)="handleMenu()"></fa-icon>
+
+            <div class="mobile-links" *ngIf="isOpen">
+                <div class="close-mobile">
+                    <fa-icon [icon]="close" class="icon close" (click)="handleMenu()"></fa-icon>
+                </div>
+                <a (click)="goToLink()" class="header-link">HOME</a>
+                <a (click)="goToLink('blog')" class="header-link">BLOG</a>
+                <a (click)="goToLink('faq')" class="header-link">FAQs</a>
+                <!-- <a href="https://helt-app.sleekplan.app/" style="text-decoration: none;"  target="_blank" class="header-link">Request Product/Service</a> -->
+                <a  target="_blank" style="text-decoration: none;" href="https://uquu7vh3rxo.typeform.com/to/cXPfgIIT" class="header-link button">Register</a>
+            </div>
+        </div>
+    </div>
+</div>

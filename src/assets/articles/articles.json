@@ -1,0 +1,11 @@
+{
+    "articles": [
+        {
+            "id": "1",
+            "title": "Ten Important Medical Tests You Need to Do in Your 30s and 40s",
+            "header-image": "https://images.unsplash.com/photo-1536064479547-7ee40b74b807?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
+            "header-image-cred": "Francisco Venâncio",
+            "body": "<div>Growing old is a part of life. We all get there at some point, and the key to living a healthy life is to visit the doctor as often as possible. </div>Gone are the days when we had to wait until we got sick to see a doctor. Today, <a href='https://www.google.com/url?q=https://www.healthpartners.com/blog/preventive-care-101-what-why-and-how-much/&sa=D&source=docs&ust=1675745791384024&usg=AOvVaw1RJB09rfk2zWX4Au_lZOvv'>preventive health</a> care empowers people to preemptively seek medical care and advice before it becomes a problem.</div>"
+        }
+    ]
+}

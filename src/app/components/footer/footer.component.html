@@ -1,0 +1,48 @@
+<div class="footer">
+    <div class="footer-container">
+        <div class="footer-upper">
+            <div class="logo" (click)="goToLink()">
+                <img src="../../../assets/logo/logo.png" alt="helt logo" />
+            </div>
+            <div class="footer-links">
+                <a (click)="goToLink()" class="footer-link" routerLinkActive="active-link" routerLink="/" [routerLinkActiveOptions]="{ exact: true }">HOME</a>
+                <a (click)="goToLink('blog')" class="footer-link" routerLinkActive="active-link" routerLink="/blog" >BLOG</a>
+                <a (click)="goToLink()" class="footer-link" routerLinkActive="active-link" routerLink="/faq" >FAQs</a>
+            </div>
+            <div class="footer-icons-container">
+                <div class="footer-icons">
+                    <a 
+                    href="mailto:hello@heltapp.io"
+                    target="_blank"
+                    class="footer-icon">
+                         <fa-icon [icon]="envelope" class="icon"></fa-icon>
+                    </a>
+                    <a 
+                    href="https://twitter.com/heltapp"
+                    target="_blank"
+                    class="footer-icon">
+                        <fa-icon [icon]="twitter" class="icon"></fa-icon>
+    
+                    </a>
+                    <a 
+                    href="https://www.linkedin.com/company/heltapp"
+                    target="_blank"
+                    class="footer-icon">
+                        <fa-icon [icon]="linkedIn" class="icon"></fa-icon>
+    
+                    </a>
+                </div>
+            </div>
+            
+        </div>
+        <div class="footer-lower">
+            <img src="../../../assets/mobile/playstore.png" alt="play store icon" class="playstore-icon"/>
+            <div class="rights">
+                <p>&copy; 2022 Helt | All rights reserved.</p>
+            </div>
+        </div>
+        
+
+    </div>
+
+</div>

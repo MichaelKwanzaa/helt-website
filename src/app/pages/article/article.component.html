@@ -1,0 +1,18 @@
+<div class="article" *ngIf="currentBlog">
+    <div class="article-title-container">
+        <h2 (click)="goToBlogs()" id="link">The Helt Blog</h2>
+        <h1 class="article-title">{{currentBlog.title}}</h1>
+        <p class="upload-date">Uploaded on {{convertDateToMoment(currentBlog.uploaded_by)}}</p>
+        <div class="header-image-container">
+            <img src={{currentBlog.header_image}} alt="blog image" class="header-image" />
+            <div class="credit center">
+                <p>Image Credit to: <a href="">{{currentBlog.header_image_cred}}</a></p>
+            </div>
+        </div>
+    </div>
+   
+   
+    <div [innerHTML]="currentBlog.body" class="blog">
+            
+    </div>  
+</div>
